@@ -1,0 +1,51 @@
+header {
+  background-color: #f1f1f1;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo img {
+  height: 40px;
+}
+
+.navigation {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.navigation li {
+  margin-right: 10px;
+}
+
+.navigation li a {
+  text-decoration: none;
+  color: #333;
+}
+
+.social ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.social ul li {
+  margin-right: 10px;
+}
+
+.phone {
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+}
+
+.phone .chevron-down {
+  width: 16px;
+  height: 16px;
+  margin-left: 5px;
+  fill: #333;
+}
