@@ -1,9 +1,116 @@
+@font-face {
+  font-family: "Proxima Nova Regular";
+  src: url("../assets/fonts/ProximaNova-Regular.woff") format("woff");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Proxima Nova Semibold";
+  src: url("../assets/fonts/ProximaNova-Semibold.woff") format("woff");
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: "Proxima Nova Bold";
+  src: url("../assets/fonts/ProximaNova-Bold.woff") format("woff");
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: "Proxima Nova Extrabold";
+  src: url("../assets/fonts/ProximaNova-Extrabld.woff") format("woff");
+  font-weight: 800;
+}
+
+@font-face {
+  font-family: "Proxima Nova Black";
+  src: url("../assets/fonts/ProximaNova-Black.woff") format("woff");
+  font-weight: 900;
+}
+
+body {
+  font-family: "Proxima Nova Regular", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.25;
+  color: var(--Black, #333);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #fff;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
 header {
-  background-color: #f1f1f1;
+  background-color: #fff;
   padding: 10px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+.container {
+  padding: 10px;
+  margin: 0 auto;
+}
+
+@media (min-width: 1920px) {
+  header,
+  footer {
+    width: 1920px;
+    padding: 24px 75px;
+  }
+
+  .container {
+    width: 1920px;
+    padding: 24px 75px;
+  }
+}
+
+@media (min-width: 1200px) and (max-width: 1920px) {
+  header,
+  footer {
+    width: 1200px;
+    padding: 24px 50px;
+  }
+
+  .container {
+    width: 1200px;
+    padding: 24px 50px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1200px) {
+  header,
+  footer {
+    width: 768px;
+    padding: 24px 10px;
+  }
+
+  .container {
+    width: 768px;
+    padding: 24px 10px;
+  }
 }
 
 .logo img {
@@ -15,6 +122,7 @@ header {
   margin: 0;
   padding: 0;
   display: flex;
+  gap: 100px;
 }
 
 .navigation li {
@@ -24,6 +132,17 @@ header {
 .navigation li a {
   text-decoration: none;
   color: #333;
+  text-align: center;
+  font-variant-numeric: lining-nums proportional-nums;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 1.25;
+}
+
+.nav-wrapp {
+  display: flex;
+  gap: 154px;
+  align-items: center;
 }
 
 .social ul {
@@ -31,6 +150,7 @@ header {
   margin: 0;
   padding: 0;
   display: flex;
+  gap: 12px;
 }
 
 .social ul li {
@@ -41,11 +161,228 @@ header {
   display: flex;
   align-items: center;
   font-weight: bold;
+  color: var(--Black, #333);
+  text-decoration: none;
+  font-variant-numeric: lining-nums proportional-nums;
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 1.25;
 }
 
 .phone .chevron-down {
+  width: 24px;
+  height: 24px;
+  margin-left: 8px;
+  fill: #333;
+}
+
+.schedule {
+  color: var(--Black, #333);
+  font-variant-numeric: lining-nums proportional-nums;
+  font-family: Proxima Nova;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.25;
+  margin-bottom: 2px;
+}
+
+.phone-number {
+  text-decoration: none;
+  color: inherit;
+}
+
+.social-phone-wrapp {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+}
+
+.hero {
+  position: relative;
+  width: 100%;
+  height: 856px;
+  padding: 100px 0 47px 0;
+  background-color: #f0f0f0; /* Колір фону секції */
+  background: url(../assets/images/hero_png.png),
+    url(../assets/images/hero_svg.svg);
+  background-repeat: no-repeat no-repeat;
+  background-position: right 75px top 50%, right;
+}
+
+.circle {
+  content: "";
+  position: absolute;
+  border-radius: 50%;
+  background: linear-gradient(134deg, #ffdf00 -7.01%, #ffb800 109.07%);
+  opacity: 0.15;
+}
+
+.circle1 {
+  width: 31px; /* Розмір першого круга */
+  height: 31px;
+  top: 513px;
+  left: 1094px;
+}
+
+.circle2 {
+  width: 93px; /* Розмір другого круга */
+  height: 93px;
+  top: 33px;
+  left: 1190px;
+}
+
+.circle3 {
+  width: 218px;
+  height: 218px;
+  top: 430px;
+  left: 596px;
+}
+
+.circle4 {
+  width: 436px;
+  height: 436px;
+  top: 33px;
+  left: -140px;
+}
+
+.arrow-down {
+  width: 18px;
+  height: 28px;
+  margin-top: 16px;
+  display: inline-block;
+  stroke: currentColor;
+  fill: #333;
+}
+
+.hero-text {
+  max-width: 960px;
+  font-family: "Proxima Nova Bold";
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1.25;
+}
+
+.hero-title {
+  max-width: 1063px;
+  margin-bottom: 20px;
+  font-family: "Proxima Nova Black";
+  font-size: 90px;
+  font-weight: 900;
+  line-height: 1.1;
+}
+
+.button {
+  display: inline-block;
+  padding: 20px 82px;
+  margin-top: 40px;
+  text-decoration: none;
+  color: inherit;
+  border-radius: 5px;
+  background: linear-gradient(134deg, #ffdf00 -7.01%, #ffb800 109.07%);
+
+  font-family: "Proxima Nova Bold";
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1.25;
+  cursor: pointer;
+}
+
+.text-more {
+  text-align: center;
+  font-family: "Proxima Nova Bold";
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.25;
+}
+
+.more-wrapp {
+  margin-top: 7px;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr auto;
+  place-items: center;
+}
+
+.slider {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: 211px;
+}
+
+.dot {
   width: 16px;
   height: 16px;
-  margin-left: 5px;
-  fill: #333;
+  border-radius: 50%;
+  border: 1px solid #333;
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+.dot:nth-child(3) {
+  background-color: #ffd00e;
+  border: none;
+}
+
+.section {
+  padding: 100px 0;
+}
+
+.section-title {
+  margin-bottom: 50px;
+  font-family: "Proxima Nova Extrabold";
+  font-size: 44px;
+  font-weight: 800;
+}
+
+.check-process {
+  height: 400px;
+  display: grid;
+  gap: 10px;
+  overflow: hidden;
+}
+
+.chek-step {
+  line-height: 1.5;
+}
+
+.bold {
+  font-family: "Proxima Nova Bold";
+  font-weight: 700;
+}
+
+.semi-bold {
+  font-family: "Proxima Nova Semibold";
+  font-weight: 600;
+}
+
+.content-wrapp {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.check-task-image {
+  margin-right: 40px;
+}
+
+.scrollbar {
+  width: 100%;
+  height: 100%;
+  overflow: auto; /* Додаємо прокрутку при необхідності */
+  position: relative;
+
+.scrollbar::-webkit-scrollbar {
+  width: 12px; 
+  background-color: #f5f5f5; 
+}
+
+.scrollbar::-webkit-scrollbar-thumb {
+  background-color: #FFD00E; 
+  border-radius: 2px;
+}
+
+.scrollbar::-webkit-scrollbar-thumb:hover {
+  background-color: #000; /
+}
 }
