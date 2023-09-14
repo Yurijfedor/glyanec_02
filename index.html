@@ -16,6 +16,19 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"
+    />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="./slider.js"></script>
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
@@ -85,7 +98,7 @@
           <a class="button" href="https://glyanec.net/ua/contacts"
             >Спробуй свої сили</a
           >
-          <div class="slider">
+          <div class="dots-list">
             <div class="dot"></div>
             <div class="dot"></div>
             <div class="dot"></div>
@@ -187,6 +200,386 @@
               </div>
             </ul>
           </div>
+        </div>
+      </section>
+      <section class="section best-company">
+        <div class="container">
+          <h2 class="section-title">Найкраща компанія для роботи в IT</h2>
+          <h3 class="subtitle">
+            Вебстудія Глянець — команда, яка налічує понад 50 професіоналів
+          </h3>
+          <ul class="strengths-list">
+            <li class="strengths-item">
+              <p class="strengths-text">
+                Наша компанія має власний офіс, хостинг, проводить навчання
+                кадрів, здійснює контроль якості кожного проєкту.
+              </p>
+            </li>
+            <li class="strengths-list">
+              <p class="strengths-text">
+                За час своєї роботи ми розробили сотні інтернет-магазинів, які
+                працюють у всіх країнах світу, продаючи своїм замовникам тисячі
+                товарів на добу.
+              </p>
+            </li>
+            <li class="strengths-list">
+              <p class="strengths-text">
+                <span class="semi-bold">Глянець</span> — це надійність.
+                Перевірено досвідом!
+              </p>
+            </li>
+          </ul>
+          <ul class="logo-list">
+            <li>
+              <img
+                src="./assets/images/best_logo1.png"
+                alt="Логотип компанії 1"
+              />
+            </li>
+            <li>
+              <img
+                src="./assets/images/best_logo2.png"
+                alt="Логотип компанії 2"
+              />
+            </li>
+            <li>
+              <img
+                src="./assets/images/best_logo3.png"
+                alt="Логотип компанії 3"
+              />
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="section">
+        <div class="container">
+          <h2 class="section-title">У нас</h2>
+          <div class="clock-container">
+            <img
+              src="./assets/images/advantages.png"
+              alt="логотип Глянець"
+              class="clock-center"
+            />
+            <ul class="advantages-list">
+              <li class="advantages-item left">
+                <div class="advantages-circle">
+                  <svg class="advantages-icon" width="40" height="40">
+                    <use href="assets/images/symbol-defs.svg#icon-time-1"></use>
+                  </svg>
+                </div>
+                <div class="advantages-item-wrapp">
+                  <h3 class="advantages-title">Зручний графік</h3>
+                  <p class="advantages-text">
+                    Ми розуміємо, що кожна людина має унікальні потреби та
+                    обставини, тому пропонуємо гнучкий режим роботи, який
+                    враховує
+                    <span class="advantages-text-span"
+                      >індивідуальні вимоги</span
+                    >
+                    та дозволяє пристосуватися до них.
+                  </p>
+                </div>
+              </li>
+              <li class="advantages-item left">
+                <div class="advantages-circle">
+                  <svg class="advantages-icon" width="40" height="40">
+                    <use
+                      href="assets/images/symbol-defs.svg#icon-location"
+                    ></use>
+                  </svg>
+                </div>
+                <div class="advantages-item-wrapp">
+                  <h3 class="advantages-title">Комфортний офіс</h3>
+                  <p class="advantages-text">
+                    Для співробітників є комфортні
+                    <span class="advantages-text-span"
+                      >робочі місця і зручні зони відпочинку</span
+                    >, що сприяють розслабленню та відновленню енергії.
+                    Використовуємо
+                    <span class="advantages-text-span">Starlink</span>, тому
+                    завжди на звʼязку.
+                  </p>
+                </div>
+              </li>
+              <li class="advantages-item left">
+                <div class="advantages-circle">
+                  <svg class="advantages-icon" width="40" height="40">
+                    <use
+                      href="assets/images/symbol-defs.svg#icon-software-developer-1"
+                    ></use>
+                  </svg>
+                </div>
+                <div class="advantages-item-wrapp">
+                  <h3 class="advantages-title">Швидкий розвиток</h3>
+                  <p class="advantages-text">
+                    За короткий проміжок часу ти
+                    <span class="advantages-text-span"
+                      >стаєш повноцінним веброзробником</span
+                    >
+                    і тобі не важливо що то буде за макет, ти зможеш реалізувати
+                    все!
+                  </p>
+                </div>
+              </li>
+              <li class="advantages-item left">
+                <div class="advantages-circle">
+                  <svg class="advantages-icon" width="40" height="40">
+                    <use href="assets/images/symbol-defs.svg#icon-atom-1"></use>
+                  </svg>
+                </div>
+                <div class="advantages-item-wrapp">
+                  <h3 class="advantages-title">Можливості Drupal</h3>
+                  <p class="advantages-text">
+                    Завдяки Drupal ви можете створити
+                    <span class="advantages-text-span"
+                      >будь-який тип веб-сайту</span
+                    >, від лендінгу до соціальної мережі, і отримати
+                    <span class="advantages-text-span">повноцінну професію</span
+                    >, що дозволить вам працювати як в складі компанії, так і
+                    окремо як фрілансер.
+                  </p>
+                </div>
+              </li>
+              <li class="advantages-item left">
+                <div class="advantages-circle">
+                  <svg class="advantages-icon" width="40" height="40">
+                    <use
+                      href="assets/images/symbol-defs.svg#icon-meeting-1"
+                    ></use>
+                  </svg>
+                </div>
+                <div class="advantages-item-wrapp">
+                  <h3 class="advantages-title">Навички та підтримка</h3>
+                  <p class="advantages-text">
+                    Працюючи у нас ти будеш працювати з препроцесорами,
+                    шаблонізаторами, різними бібліотеками, Doker, Git і з усім
+                    цим ми
+                    <span class="advantages-text-span"
+                      >тобі допоможемо розібратися</span
+                    >
+                    і дамо можливість
+                    <span class="advantages-text-span"
+                      >свої знання сповна реалізувати</span
+                    >.
+                  </p>
+                </div>
+              </li>
+              <li class="advantages-item">
+                <div class="advantages-circle">
+                  <svg class="advantages-icon" width="40" height="40">
+                    <use
+                      href="assets/images/symbol-defs.svg#icon-accounts-1"
+                    ></use>
+                  </svg>
+                </div>
+                <div class="advantages-item-wrapp right">
+                  <h3 class="advantages-title">
+                    Постійне зростання надходжень
+                  </h3>
+                  <p class="advantages-text text-right">
+                    У нашій компанії ми працюємо над тим, щоб надходження
+                    <span class="advantages-text-span">постійно зростали</span>.
+                    Наша мета — допомогти вам досягти фінансового успіху.
+                  </p>
+                </div>
+              </li>
+              <li class="advantages-item">
+                <div class="advantages-circle">
+                  <svg class="advantages-icon" width="40" height="40">
+                    <use
+                      href="assets/images/symbol-defs.svg#icon-client-1"
+                    ></use>
+                  </svg>
+                </div>
+                <div class="advantages-item-wrapp right">
+                  <h3 class="advantages-title">Постійний потік клієнтів</h3>
+                  <p class="advantages-text text-right">
+                    У нас потік
+                    <span class="advantages-text-span">нових замовлень</span>,
+                    тому щоразу ти зможеш спробувати реалізувати щось нове
+                  </p>
+                </div>
+              </li>
+              <li class="advantages-item">
+                <div class="advantages-circle">
+                  <svg class="advantages-icon" width="40" height="40">
+                    <use
+                      href="assets/images/symbol-defs.svg#icon-module-1"
+                    ></use>
+                  </svg>
+                </div>
+                <div class="advantages-item-wrapp right">
+                  <h3 class="advantages-title">Участь у стартапах</h3>
+                  <p class="advantages-text text-right">
+                    У нашій компанії, яка налічує багато стартапів, ми надаємо
+                    учасникам розробки можливість
+                    <span class="advantages-text-span">отримати відсоток</span>
+                    від прибутку. Також ти розберешся в Drupal API та зможеш
+                    писати
+                    <span class="advantages-text-span">свої модулі</span>
+                  </p>
+                </div>
+              </li>
+              <li class="advantages-item">
+                <div class="advantages-circle">
+                  <svg class="advantages-icon" width="40" height="40">
+                    <use
+                      href="assets/images/symbol-defs.svg#icon-workspace"
+                    ></use>
+                  </svg>
+                </div>
+                <div class="advantages-item-wrapp right">
+                  <h3 class="advantages-title">Сучасна техніка</h3>
+                  <p class="advantages-text text-right">
+                    Ми забезпечуємо всіх виконавців
+                    <span class="advantages-text-span"
+                      >сучасною технікою від Apple.</span
+                    >
+                    Кожен співробітник отримує свій власний MacBook, що дозволяє
+                    працювати з надійним та потужним обладнанням, якісно
+                    виконувати будь-які поточні завдання.
+                  </p>
+                </div>
+              </li>
+              <li class="advantages-item">
+                <div class="advantages-circle">
+                  <svg class="advantages-icon" width="40" height="40">
+                    <use href="assets/images/symbol-defs.svg#icon-xbox-1"></use>
+                  </svg>
+                </div>
+                <div class="advantages-item-wrapp right">
+                  <h3 class="advantages-title">Відпочинок та розваги</h3>
+                  <p class="advantages-text text-right">
+                    Ми облаштували комфортні зони відпочинку на свіжому повітрі.
+                    Окрім цього, в офісі є
+                    <span class="advantages-text-span"
+                      >PlayStation та VR-окуляри</span
+                    >, тож під час перерв або після робочого дня завжди можна
+                    розважитися.
+                  </p>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="slider">
+            <div>
+              <img src="./assets/images/advantages1.jpg" alt="Зображення 1" />
+            </div>
+            <div>
+              <img src="./assets/images/advantages2.jpg" alt="Зображення 2" />
+            </div>
+            <div>
+              <img src="./assets/images/advantages3.jpg" alt="Зображення 3" />
+            </div>
+            <div>
+              <img src="./assets/images/advantages4.jpg" alt="Зображення 4" />
+            </div>
+            <div>
+              <img
+                src="./assets/images/advantages1 - Copy.jpg"
+                alt="Зображення 1"
+              />
+            </div>
+            <div>
+              <img
+                src="./assets/images/advantages2 - Copy.jpg"
+                alt="Зображення 2"
+              />
+            </div>
+            <div>
+              <img
+                src="./assets/images/advantages3 - Copy.jpg"
+                alt="Зображення 3"
+              />
+            </div>
+            <div>
+              <img
+                src="./assets/images/advantages4 - Copy.jpg"
+                alt="Зображення 4"
+              />
+            </div>
+          </div>
+          <div class="slider-controls">
+            <button class="prev-button">
+              <svg width="40" height="40">
+                <use href="assets/images/symbol-defs.svg#icon-arrow-left"></use>
+              </svg>
+            </button>
+            <button class="next-button">
+              <svg width="40" height="40">
+                <use
+                  href="assets/images/symbol-defs.svg#icon-arrow-right"
+                ></use>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </section>
+      <section class="section">
+        <div class="container">
+          <h2 class="section-title">Наш вклад в Drupal</h2>
+          <ul class="deposit-drupal-list">
+            <li class="deposit-drupal-item">
+              <a class="deposit-drupal-link" href="#">
+                <svg class="icon-drupal" height="46">
+                  <use
+                    xlink:href="./assets/images/symbol-defs.svg#icon-drupal-logo1"
+                    x="-32"
+                  ></use>
+                </svg>
+                <h3 class="drupal-item-title">
+                  Ми зробили сайт спільноти drupal.ua
+                </h3>
+                <p class="drupal-item-text">
+                  Ми розуміємо, що кожна людина має унікальні потреби та
+                  обставини, тому пропонуємо гнучкий режим роботи, який враховує
+                  <span class="advantages-text-span">індивідуальні вимоги</span>
+                  та дозволяє пристосуватися до них.
+                </p>
+              </a>
+            </li>
+
+            <li class="deposit-drupal-item">
+              <a class="deposit-drupal-link" href="#">
+                <svg class="icon-drupal" height="46">
+                  <use
+                    xlink:href="./assets/images/symbol-defs.svg#icon-drupal-logo2"
+                    x="-110"
+                  ></use>
+                </svg>
+                <h3 class="drupal-item-title">Робимо вклад в Open Source</h3>
+                <p class="drupal-item-text">
+                  Drupal – це не тільки широке міжнародне співтовариство, але й
+                  потужна технологія OpenSource. Наша команда
+                  <span class="advantages-text-span"
+                    >створює публікує власні модулі та теми</span
+                  >
+                  оформлення на Drupal.org.
+                </p>
+              </a>
+            </li>
+            <li class="deposit-drupal-item">
+              <a class="deposit-drupal-link" href="#">
+                <svg class="icon-drupal" height="46">
+                  <use
+                    xlink:href="./assets/images/symbol-defs.svg#icon-drupal-logo3"
+                    x="-73"
+                  ></use>
+                </svg>
+                <h3 class="drupal-item-title">
+                  Дали людям безкоштовно e-commerce платформу
+                </h3>
+                <p class="drupal-item-text">
+                  Alternative commerce - безкоштовний 100% готовий сайт-магазин
+                  на основі Drupal. Ви можете завантажити та
+                  <span class="advantages-text-span"
+                    >почати робити покупки на своєму хостингу!</span
+                  >
+                  Або за нашої підтримки та хостингу!
+                </p>
+              </a>
+            </li>
+          </ul>
         </div>
       </section>
     </main>
