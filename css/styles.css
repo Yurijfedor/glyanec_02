@@ -61,6 +61,12 @@ img {
   height: auto;
 }
 
+.link {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+}
+
 .link:hover {
   cursor: pointer;
 }
@@ -681,4 +687,83 @@ header {
 .next-clients {
   top: 175px;
   right: 60px;
+}
+
+.charity-content-wrapp {
+  display: flex;
+  justify-content: space-between;
+}
+
+.charity-title {
+  margin-bottom: 76px;
+}
+
+.charity-wrapp {
+  width: 749px;
+}
+
+.charity-images-list {
+  position: relative;
+  top: -130px;
+}
+
+.charity-image {
+  position: absolute;
+  border-radius: 5px;
+}
+
+.charity-image:nth-child(1) {
+  width: 518px;
+  height: 352px;
+  top: 0;
+  right: 0;
+}
+
+.charity-image:nth-child(2) {
+  width: 413px;
+  height: 347px;
+  top: 75px;
+  right: 464px;
+}
+
+.charity-image:nth-child(3) {
+  width: 375px;
+  height: 280px;
+  top: 187px;
+  right: 103px;
+}
+
+.card-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  margin-top: 164px;
+  border-radius: 10px;
+  background: #fff;
+}
+
+.card-item {
+  display: flex;
+  gap: 16px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 36px 0;
+  border-radius: 10px;
+  box-shadow: 0px 0px 20px 0px rgba(75, 85, 89, 0.1);
+  transition: background-color 0.3s ease;
+}
+
+.charity-link {
+  display: flex;
+  gap: 16px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.card-item:hover {
+  background-color: #ffd00e;
 }
