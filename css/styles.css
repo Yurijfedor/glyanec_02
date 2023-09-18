@@ -28,6 +28,12 @@
   font-weight: 900;
 }
 
+@font-face {
+  font-family: "Century Gothic Bold";
+  src: url("../assets/fonts/CenturyGothic-Bold.woff") format("woff");
+  font-weight: 700;
+}
+
 body {
   font-family: "Proxima Nova Regular", sans-serif;
   font-weight: 400;
@@ -87,8 +93,7 @@ header {
 }
 
 @media (min-width: 1920px) {
-  header,
-  footer {
+  header {
     width: 1920px;
     padding: 24px 75px;
   }
@@ -766,4 +771,101 @@ header {
 
 .card-item:hover {
   background-color: #ffd00e;
+}
+
+.footer {
+  position: relative;
+  padding-top: 50px;
+  padding-bottom: 55px;
+  background: url(../assets/images/Rectangle\ 421.jpg);
+  background-repeat: no-repeat;
+  background-position: 525px;
+  background-size: contain;
+}
+.footer::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 525px; /* Ширина прямокутної області */
+  height: 100%; /* Висота прямокутної області (100% від батьківського елемента) */
+  background: #ffd00e; /* Колір прямокутної області */
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.first-footer-wrapp {
+  width: 420px;
+}
+
+.logo-footer {
+  margin-bottom: 37px;
+}
+
+.footer-text {
+  margin-top: 69px;
+}
+
+.footer-subtitle {
+  font-family: "Proxima Nova Bold";
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.second-footer-wrapp {
+  color: #fff;
+}
+
+.call-subtitle {
+  margin-bottom: 30px;
+}
+
+.phone-number-wrapp {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 20px;
+}
+
+.phone-number {
+  font-size: 24px;
+}
+
+.phone-number-span {
+  font-family: "Century Gothic Bold";
+  font-weight: 700;
+  font-size: 24px;
+}
+
+.phone-text {
+  line-height: 1.5;
+}
+
+.email {
+  margin-bottom: 20px;
+}
+
+.social-list {
+  display: flex;
+  gap: 45px;
+}
+
+.address {
+  width: 293px;
+}
+
+.location {
+  line-height: 1.5;
+  margin-top: 20px;
+}
+
+.footer-logo-list {
+  width: 340px;
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 22px;
+  column-gap: 44px;
+  margin-top: 9px;
 }
