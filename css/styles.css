@@ -85,6 +85,14 @@ header {
   align-items: center;
 }
 
+@media (max-width: 1710px) {
+  header {
+    flex-wrap: wrap;
+    row-gap: 40px;
+    justify-content: center;
+  }
+}
+
 .container {
   padding: 0 10px;
   margin: 0 auto;
@@ -105,28 +113,37 @@ header {
 }
 
 @media (min-width: 1200px) and (max-width: 1920px) {
-  header,
-  footer {
-    width: 1200px;
+  header {
+    width: 100%;
     padding: 0 50px;
   }
 
   .container {
-    width: 1200px;
+    width: 100%;
     padding: 0 50px;
   }
 }
 
 @media (min-width: 768px) and (max-width: 1200px) {
-  header,
-  footer {
+  header {
     width: 768px;
+    margin: 0 auto;
     padding: 24px 10px;
   }
 
   .container {
-    width: 768px;
+    width: 100%;
     padding: 24px 10px;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    width: 100%;
+    padding: 24px 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 }
 
@@ -140,6 +157,12 @@ header {
   padding: 0;
   display: flex;
   gap: 100px;
+}
+
+@media (max-width: 900px) {
+  .navigation {
+    display: block;
+  }
 }
 
 .navigation li {
@@ -160,6 +183,18 @@ header {
   display: flex;
   gap: 154px;
   align-items: center;
+}
+
+@media (max-width: 1220px) {
+  .nav-wrapp {
+    flex-wrap: wrap;
+    row-gap: 40px;
+    justify-content: center;
+  }
+}
+
+.logo img {
+  height: 40px;
 }
 
 .social ul {
@@ -262,6 +297,12 @@ header {
   left: -140px;
 }
 
+@media (max-width: 768px) {
+  .hero-title-wrapp {
+    text-align: center;
+  }
+}
+
 .arrow-down {
   width: 18px;
   height: 28px;
@@ -286,6 +327,14 @@ header {
   font-size: 90px;
   font-weight: 900;
   line-height: 1.1;
+}
+
+@media (max-width: 768px) {
+  .hero-title {
+    font-family: "Proxima Nova Bold";
+    font-size: 70px;
+    font-weight: 700;
+  }
 }
 
 .button {
@@ -355,11 +404,27 @@ header {
     );
 }
 
+@media (max-width: 1200px) {
+  .best-company {
+    background: linear-gradient(
+      134deg,
+      rgba(255, 223, 0, 0.7) -7.01%,
+      rgba(255, 184, 0, 0.7) 109.07%
+    );
+  }
+}
+
 .section-title {
   margin-bottom: 50px;
   font-family: "Proxima Nova Extrabold";
   font-size: 44px;
   font-weight: 800;
+}
+
+@media (max-width: 768px) {
+  .section-title {
+    text-align: center;
+  }
 }
 
 .subtitle {
@@ -369,6 +434,12 @@ header {
 }
 .check-section {
   padding: 100px 0;
+}
+
+@media (min-width: 1200px) and (max-width: 1919px) {
+  .check-image {
+    width: 50%;
+  }
 }
 
 .check-list {
@@ -394,8 +465,15 @@ header {
 
 .content-wrapp {
   display: flex;
+  gap: 40px;
   justify-content: center;
   align-items: center;
+}
+
+@media (max-width: 1200px) {
+  .content-wrapp {
+    flex-direction: column;
+  }
 }
 
 .check-task-image {
@@ -430,6 +508,12 @@ header {
   margin-top: 15px;
   display: grid;
   gap: 15px;
+}
+
+@media (max-width: 1200px) {
+  .strengths-list {
+    width: 100%;
+  }
 }
 
 .strengths-text {
@@ -468,8 +552,53 @@ header {
   position: absolute;
 }
 
+.advantages-item-wrapp {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.advantages-text {
+  text-align: right;
+  font-size: 16px;
+}
+
 .left {
   flex-direction: row-reverse;
+}
+
+@media (max-width: 1830px) {
+  .clock-center {
+    display: none;
+  }
+
+  .advantages-item {
+    position: initial;
+  }
+
+  .clock-container {
+    width: 100%;
+    height: auto;
+  }
+
+  .advantages-list {
+    width: 100%;
+    display: grid;
+    gap: 30px;
+    justify-content: center;
+  }
+
+  .advantages-text {
+    text-align: left;
+  }
+
+  .advantages-item-wrapp {
+    align-items: flex-start;
+  }
+
+  .left {
+    flex-direction: initial;
+  }
 }
 
 .advantages-item:nth-child(1) {
@@ -524,20 +653,9 @@ header {
   background: linear-gradient(134deg, #ffdf00 -7.01%, #ffb800 109.07%);
 }
 
-.advantages-item-wrapp {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-}
-
 .right {
   align-items: flex-start;
   text-align: left;
-}
-
-.advantages-text {
-  text-align: right;
-  font-size: 16px;
 }
 
 .text-right {
@@ -593,6 +711,16 @@ header {
   top: 1020px;
   right: 60px;
   background-color: #ffe30b;
+}
+
+@media (max-width: 1830px) {
+  .prev-button {
+    top: 1650px;
+  }
+
+  .next-button {
+    top: 1730px;
+  }
 }
 
 .deposit-drupal-list {
@@ -738,6 +866,27 @@ header {
   right: 103px;
 }
 
+@media (max-width: 1722px) {
+  .charity-content-wrapp {
+    display: block;
+  }
+
+  .charity-wrapp {
+    width: 100%;
+  }
+
+  .charity-images-list {
+    top: 0;
+    display: grid;
+    gap: 20px;
+    justify-content: center;
+  }
+
+  .charity-image {
+    position: initial;
+  }
+}
+
 .card-list {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -777,19 +926,10 @@ header {
   position: relative;
   padding-top: 50px;
   padding-bottom: 55px;
-  background: url(../assets/images/Rectangle\ 421.jpg);
+  background: url(../assets/images/Rectangle\ 421.jpg), #ffd00e;
   background-repeat: no-repeat;
   background-position: 525px;
   background-size: contain;
-}
-.footer::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 525px; /* Ширина прямокутної області */
-  height: 100%; /* Висота прямокутної області (100% від батьківського елемента) */
-  background: #ffd00e; /* Колір прямокутної області */
 }
 
 .footer-container {
@@ -799,6 +939,7 @@ header {
 
 .first-footer-wrapp {
   width: 420px;
+  margin-right: 15%;
 }
 
 .logo-footer {
@@ -868,4 +1009,38 @@ header {
   row-gap: 22px;
   column-gap: 44px;
   margin-top: 9px;
+}
+
+.contacts-info {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+@media (max-width: 1600px) {
+  .footer {
+    background-position: 0 400px;
+    background-size: cover;
+  }
+
+  .footer-container {
+    flex-direction: column;
+    row-gap: 50px;
+    align-items: center;
+  }
+
+  .first-footer-wrapp {
+  }
+}
+
+@media (max-width: 1000px) {
+  .first-footer-wrapp {
+    margin-right: 0;
+  }
+
+  .contacts-info {
+    flex-direction: column;
+    align-items: center;
+    row-gap: 30px;
+  }
 }
